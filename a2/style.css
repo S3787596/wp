@@ -1,1 +1,90 @@
 /* Insert your styles here */
+/* Navigation Bar styling */
+nav.sticky {
+    left: 0px;
+    position: sticky;
+    top: 0;
+    padding: 16px 16px;
+    margin: 0px;
+    background-color: #641534;
+    border: 2px solid #AD5C7D;
+  }
+  #navbar a {
+    font-weight:bold;
+    color: #AD5C7D;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+    #navbar a:hover {
+    
+     background: #ddd;
+     color: black;
+  }
+  
+  /* styling for 'Lunardo Cinemas' */
+    .header {
+     font: 16px arial, sans-serif;
+     color: #641534;
+     text-shadow: 4px 4px 5px #AD5C7D;
+    }
+  
+    /* Makes the header logo and title in-line */
+    .headerImg, .compName  {
+      display: inline-block;
+      vertical-align: middle;
+      
+    }
+  
+    .headerImg {
+      padding: 6px;
+      border: 6px;
+    }
+  
+   
+  
+    /* For Seat images... */
+  .seatImages img {
+    height: auto;
+    float: left;
+    padding: 8px;
+  }
+    .standardSeat{
+      width: 35%;
+     
+    }
+  
+    .firstSeat {
+      width: 30%;
+     
+    }
+  
+    /* For <section> headings */
+  
+    .sectionHeading {
+        color: #863153;
+        font-weight: 700;
+          }
+  
+    body {
+      background-image: url(../../media/background-image.png);
+      
+    }
+
+    /* For table */
+    .table{
+    width:100%;
+    border: 1px solid #3A0018;
+    }
+    tr:nth-child(even) {
+    background-color: #AD5C7D;
+    }
+    tr:nth-child(odd) {
+    background-color: #D99bb4;
+    }
+    th {
+    background-color: #3A0018;
+    color: white;
+    }
+    
