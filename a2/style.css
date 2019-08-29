@@ -93,8 +93,8 @@ display: block;
 text-align: center;
 background-color: pink;
 border: 2px solid  #3A0018;
-padding: 5px;
-margin-top: 5px;
+padding: 0px;
+margin-top: 0px;
   }
 
   /* Poster styling */
@@ -121,18 +121,22 @@ margin-top: 5px;
 
 #mv1 {
   background-image: url(../../media/avengers-background.jpg);
+  background-repeat: no-repeat;
 }
 
 #mv2 {
   background-image: url(../../media/top-end-wedding-background.jpeg);
+  background-repeat: no-repeat;
 }
 
 #mv3 {
   background-image: url(../../media/dumbo-background.jpg);
+  background-repeat: no-repeat;
 }
 
 #mv4 {
   background-image: url(../../media/the-happy-prince-background.jpg);
+  background-repeat: no-repeat;
 }
 
 .posterTitle {
@@ -141,6 +145,7 @@ margin-top: 5px;
  padding: 10px;
  text-align: center;
  text-shadow: 3px 2px rgb(65, 18, 58);
+ font-size: 28px;
 }
 
 /* Removes bullet points from showtimes listings */
@@ -155,7 +160,7 @@ div.movieBlock ul {
   color: rgb(250, 249, 249);
   font-size: 22px;
   text-indent: 4%;
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   
 }
 
@@ -170,8 +175,8 @@ overflow: auto;
 .table {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
-  margin-bottom: auto;
+  margin-top: 140px;
+  margin-bottom: 140px;
   width:65%;
   border: 1px solid #3A0018;
   font-weight: 700;
@@ -207,8 +212,8 @@ li {
 }
 
 .section {
-  height: 100vh;
-
+  /* height: 100vh; */
+  display: inline;
 }
 
 .rating {
@@ -217,7 +222,7 @@ li {
 
 #footer {
   display: block;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .parallax {
@@ -230,4 +235,76 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.syn {
+  width: auto;
+  border: 2px solid pink;
+  border-spacing: 10px 50px;
+  padding: 5px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  background-color: rgb(53, 10, 53);
+}
+
+.syn iframe {
+  margin-left: 0px;
+  float: right;
+  height: 430px;
+  width: 650px;
+  margin: 0 auto;
+  border: none;
+
+  padding-top: 0px; 
+  padding-right: 4px;
+  padding-left: 4px;
+
+}
+
+
+.syn p {
+  color: pink;
+  padding-right: 50px;
+  padding-left: 10px;
+  font-size: 20px;
+  text-align: left;
+  width: 500px;
+}
+
+
+
+.syn h3 {
+ padding-left: 10px;
+ padding-top: 10px;
+ text-align: left;
+ font-size: 30px;
+
+}
+
+
+.span {
+  font-weight: bold; 
+  padding-bottom: 100px;
+  padding-left: 100px;
+  color: white;
+}
+#booking {
+  color: white;
+  margin-left: 6px;
+
+}
+.button {
+  background-color: rgb(223, 145, 226); /* Green */
+  border: none;
+  color: black;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  margin-bottom: 6px;
+  width: 150px;
 }

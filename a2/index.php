@@ -30,6 +30,7 @@
     <main class="main">
     <a class="anchor" name="aboutUs"></a>
     <section class="section">
+    
 <h2 class="sectionHeading">About Us</h2>
 <p>Welcome to Lunardo Cinemas! We are a small cinema located in Somerville. We have recently improved the viewing experience vastly
   by upgrading our seats as well as our screen projection and sound system. We now offer both standard seats and first class seats which are reclinable.
@@ -38,15 +39,14 @@
 
 These are the new seats we have just installed:</p>
 
-<div class="row">
+  <div class="row">
   <div class="seatImages">
   <img  class='standardSeat' src="../../media/standard-seat.png" alt="Standard Cinema Seat">
   </div>
   <div class="seatImages">
     <img class='firstSeat' src="../../media/first-class-seat.png" alt="First Class Cinema Seat" >
   </div>
-</div>
-
+  </div>
     </section>
 
     <section class="parallax"></section> 
@@ -91,11 +91,9 @@ These are the new seats we have just installed:</p>
     <td>24.00</td>
   </tr>
 </table>
+</div>
+</section>
 
-    
-  
- 
-    </section>
     <section class="parallax"></section> 
     <a class="anchor" name="nowShowing"></a>
     <section class="section">
@@ -169,14 +167,41 @@ These are the new seats we have just installed:</p>
 </ul>
 </div>
     </div>
+
+  
     </section>
+    <div class="syn">
+
+    <div><iframe src="https://www.youtube.com/embed/hA6hldpSTF8"> </iframe>
+      <h3 class="posterTitle"> Avengers: Endgame</h3><span class="span">(PG-13)<span></div>
+      <p>After the devastating events of Avengers: Infinity War (2018), the 
+        universe is in ruins due to the efforts of the Mad Titan, Thanos. 
+        With the help of remaining allies, the Avengers must assemble once 
+        more in order to undo Thanos' actions and undo the chaos to the 
+        universe, no matter what consequences may be in store, and no matter 
+        who they face...</p>
+
+        <h4 id="booking">Booking:<h4>
+          <button class="button">Wednesday - 9:00PM</button>
+          <button class="button">Thursday - 9:00PM</button>
+          <button class="button">Friday - 9:00PM</button>
+          <button class="button">Saturday - 6:00PM</button>
+          <button class="button">Sunday - 6:00PM</button>
+
+
+    </div>
+
+
+
+
+
 
     </main>
 
     <footer id="footer">
       <div>&copy;<script>
         document.write(new Date().getFullYear());
-      </script> by Wyatt Jenkins (s3770872) & Prerak Soni (s3787596), Group: A2-zz-PLEASE-UPDATE-1. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
+      </script> by Wyatt Jenkins (s3770872) & Prerak Soni (s3787596), Group: A2-s3787596-s3770872. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
