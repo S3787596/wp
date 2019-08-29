@@ -1,90 +1,233 @@
 /* Insert your styles here */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  
+}
+
+#websiteTitle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 800px;
+  height: auto;
+}
+/* Uniform 'main' styling for all sections */
+
+.main {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 20px;
+}
+
 /* Navigation Bar styling */
 nav.sticky {
-    left: 0px;
-    position: sticky;
-    top: 0;
-    padding: 16px 16px;
-    margin: 0px;
-    background-color: #641534;
-    border: 2px solid #AD5C7D;
-  }
-  #navbar a {
-    font-weight:bold;
-    color: #AD5C7D;
-    text-align: center;
-    padding: 8px 10px;
-    text-decoration: none;
-    font-size: 18px;
-  }
-    #navbar a:hover {
-    
-     background: #ddd;
-     color: black;
-  }
+  left: 0px;
+  position: sticky;
+  top: 0;
+  padding: 10px 10px;
+  margin: 0px;
+  background-color: #641534;
+  border: 2px solid #AD5C7D;
+}
+#navbar a {
+  font-weight:bold;
+  color: #AD5C7D;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+  #navbar a:hover {
   
-  /* styling for 'Lunardo Cinemas' */
-    .header {
-     font: 16px arial, sans-serif;
-     color: #641534;
-     text-shadow: 4px 4px 5px #AD5C7D;
-    }
-  
-    /* Makes the header logo and title in-line */
-    .headerImg, .compName  {
-      display: inline-block;
-      vertical-align: middle;
-      
-    }
-  
-    .headerImg {
-      padding: 6px;
-      border: 6px;
-    }
-  
-   
-  
-    /* For Seat images... */
-  .seatImages img {
-    height: auto;
-    float: left;
-    padding: 8px;
-  }
-    .standardSeat{
-      width: 35%;
-     
-    }
-  
-    .firstSeat {
-      width: 30%;
-     
-    }
-  
-    /* For <section> headings */
-  
-    .sectionHeading {
-        color: #863153;
-        font-weight: 700;
-          }
-  
-    body {
-      background-image: url(../../media/background-image.png);
-      
-    }
+   background: rgb(54, 2, 46);
+   color: white;
+}
 
-    /* For table */
-    .table{
-    width:100%;
-    border: 1px solid #3A0018;
-    }
-    tr:nth-child(even) {
-    background-color: #AD5C7D;
-    }
-    tr:nth-child(odd) {
-    background-color: #D99bb4;
-    }
-    th {
-    background-color: #3A0018;
-    color: white;
-    }
+/* styling for 'Lunardo Cinemas' */
+  .header {
+   font: 16px arial, sans-serif;
+   color: #641534;
+   text-shadow: 4px 4px 5px #AD5C7D;
+  }
+
+  /* Makes the header logo and title in-line */
+  .headerImg, .compName  {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .headerImg {
+    padding: 6px;
+    border: 6px;
+  }
+
+  /* For Seat images... */
+
+.seatImages img {
+  height: auto;
+  padding: 8px;
+  float: left;
+}
+  .standardSeat{
+    width: 35%;
+  }
+
+  .firstSeat {
+    width: 30%;
+  }
+
+  /* Stops text of next section from appearing by the image */
+
+  .row::after { 
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* For the headings of each section */
+
+  .sectionHeading {
+color: #863153;
+font-weight: 700;
+display: block;
+text-align: center;
+background-color: pink;
+border: 2px solid  #3A0018;
+padding: 5px;
+margin-top: 5px;
+  }
+
+  /* Poster styling */
+
+  .poster {
+    height: 360px;
+    width: 240px;
+    align-content: flex-start;
+    float: left;
+    box-shadow: 2px 2px 16px rgb(27, 2, 27);
+    margin-right: 8px;
     
+  
+  }
+
+.movieBlock {
+  width: 46vw;
+  display: inline-block;
+  overflow: auto;
+  padding: 15px;
+  background-size: 100%;
+ 
+}
+
+#mv1 {
+  background-image: url(../../media/avengers-background.jpg);
+}
+
+#mv2 {
+  background-image: url(../../media/top-end-wedding-background.jpeg);
+}
+
+#mv3 {
+  background-image: url(../../media/dumbo-background.jpg);
+}
+
+#mv4 {
+  background-image: url(../../media/the-happy-prince-background.jpg);
+}
+
+.posterTitle {
+ color: rgb(224, 113, 215);
+ display: inline;
+ padding: 10px;
+ text-align: center;
+ text-shadow: 3px 2px rgb(65, 18, 58);
+}
+
+/* Removes bullet points from showtimes listings */
+
+.showtimes {
+  list-style-type: none;
+  margin-right: 8px;
+}
+
+div.movieBlock ul {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(250, 249, 249);
+  font-size: 22px;
+  text-indent: 4%;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.titlePlusTimes {
+background-color: rgba(38, 11, 39, 0.7);
+overflow: auto;
+}
+
+
+/* Table CSS Here */
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: auto;
+  width:65%;
+  border: 1px solid #3A0018;
+  font-weight: 700;
+ 
+  }
+  tr:nth-child(even) {
+  background-color: #AD5C7D;
+  text-align: center;
+  line-height: 40px;
+  }
+  tr:nth-child(odd) {
+  background-color: #D99bb4;
+  text-align: center;
+  line-height: 40px;
+  }
+  th {
+  background-color: #3A0018;
+  color: white;
+  border-bottom: 2px solid white; 
+  text-align: center;
+  }
+
+
+  .anchor {
+    display: block;
+    position: relative;
+    top: -45px;
+    visibility: hidden;
+}
+
+li {
+  margin: 10px;
+}
+
+.section {
+  height: 100vh;
+
+}
+
+.rating {
+  color: white;
+}
+
+#footer {
+  display: block;
+  margin-top: 100px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../../media/parallax_img.jpg");
+  /* Set a specific height */
+  min-height: 300px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
