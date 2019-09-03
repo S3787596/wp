@@ -1,11 +1,9 @@
 /* Insert your styles here */
-
+/* CSS for Web Programming Assignment 2 Wyatt (s3770872) & Prerak (s3787596) */
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
-  
 }
-
 #websiteTitle {
   display: inline-block;
   vertical-align: middle;
@@ -13,12 +11,10 @@ html {
   height: auto;
 }
 /* Uniform 'main' styling for all sections */
-
 .main {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 20px;
 }
-
 /* Navigation Bar styling */
 nav.sticky {
   left: 0px;
@@ -37,141 +33,125 @@ nav.sticky {
   text-decoration: none;
   font-size: 18px;
 }
-  #navbar a:hover {
-  
-   background: rgb(54, 2, 46);
-   color: white;
+#navbar a:hover {
+  background: rgb(54, 2, 46);
+  color: white;
 }
-
-/* styling for 'Lunardo Cinemas' */
-  .header {
-   font: 16px arial, sans-serif;
-   color: #641534;
-   text-shadow: 4px 4px 5px #AD5C7D;
-  }
-
-  /* Makes the header logo and title in-line */
-  .headerImg, .compName  {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .headerImg {
-    padding: 6px;
-    border: 6px;
-  }
-
-  /* For Seat images... */
-
+/* Styling for 'Lunardo Cinemas' */
+.header {
+  font: 16px arial, sans-serif;
+  color: #641534;
+  text-shadow: 4px 4px 5px #AD5C7D;
+}
+/* Makes the header logo and title in-line */
+.headerImg, .compName {
+  display: inline-block;
+  vertical-align: middle;
+}
+.headerImg {
+  padding: 6px;
+  border: 6px;
+}
+/* For Seat images... */
 .seatImages img {
   height: auto;
   padding: 8px;
-  float: left;
+  float: right;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
 }
-  .standardSeat{
-    width: 35%;
-  }
-
-  .firstSeat {
-    width: 30%;
-  }
-
-  /* Stops text of next section from appearing by the image */
-
-  .row::after { 
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  /* For the headings of each section */
-
-  .sectionHeading {
-color: #863153;
-font-weight: 700;
-display: block;
-text-align: center;
-background-color: pink;
-border: 2px solid  #3A0018;
-padding: 0px;
-margin-top: 0px;
-  }
-
-  /* Poster styling */
-
-  .poster {
-    height: 360px;
-    width: 240px;
-    align-content: flex-start;
-    float: left;
-    box-shadow: 2px 2px 16px rgb(27, 2, 27);
-    margin-right: 8px;
-    
-  
-  }
-
+/* CSS for Seats and accompanying text */
+#seatImages{
+  text-align:center;
+  margin:50px auto;
+}
+#seatImages a{
+  margin:0px 20px;
+  display:inline-block;
+  text-decoration:none;
+  color:black;
+}
+.seatText {
+}
+.seatPic {
+  width: 400px;
+  height: auto;
+}
+/* Stops text of next section from appearing by the image */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* For the headings of each section */
+.sectionHeading {
+  color: #863153;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  background-color: pink;
+  border: 2px solid #3A0018;
+  padding: 0px;
+  margin-top: 0px;
+}
+/* Poster styling */
+.poster {
+  height: 360px;
+  width: 240px;
+  align-content: flex-start;
+  float: left;
+  box-shadow: 2px 2px 16px rgb(27, 2, 27);
+  margin-right: 8px;
+}
 .movieBlock {
   width: 46vw;
   display: inline-block;
   overflow: auto;
   padding: 15px;
   background-size: 100%;
- 
 }
-
 #mv1 {
   background-image: url(../../media/avengers-background.jpg);
   background-repeat: no-repeat;
 }
-
 #mv2 {
   background-image: url(../../media/top-end-wedding-background.jpeg);
   background-repeat: no-repeat;
 }
-
 #mv3 {
   background-image: url(../../media/dumbo-background.jpg);
   background-repeat: no-repeat;
 }
-
 #mv4 {
   background-image: url(../../media/the-happy-prince-background.jpg);
   background-repeat: no-repeat;
 }
-
 .posterTitle {
- color: rgb(224, 113, 215);
- display: inline;
- padding: 10px;
- text-align: center;
- text-shadow: 3px 2px rgb(65, 18, 58);
- font-size: 28px;
+  color: rgb(224, 113, 215);
+  display: inline;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 3px 2px rgb(65, 18, 58);
+  font-size: 28px;
 }
-
 /* Removes bullet points from showtimes listings */
-
 .showtimes {
   list-style-type: none;
   margin-right: 8px;
 }
-
 div.movieBlock ul {
-  font-family: 'Roboto', sans-serif;
   color: rgb(250, 249, 249);
   font-size: 22px;
   text-indent: 4%;
- font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-  
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
-
 .titlePlusTimes {
-background-color: rgba(38, 11, 39, 0.7);
-overflow: auto;
+  background-color: rgba(38, 11, 39, 0.7);
+  overflow: auto;
 }
-
-
 /* Table CSS Here */
-
 .table {
   margin-left: auto;
   margin-right: auto;
@@ -180,63 +160,53 @@ overflow: auto;
   width:65%;
   border: 1px solid #3A0018;
   font-weight: 700;
- 
-  }
-  tr:nth-child(even) {
+}
+tr:nth-child(even) {
   background-color: #AD5C7D;
   text-align: center;
   line-height: 40px;
-  }
-  tr:nth-child(odd) {
+}
+tr:nth-child(odd) {
   background-color: #D99bb4;
   text-align: center;
   line-height: 40px;
-  }
-  th {
+}
+th {
   background-color: #3A0018;
   color: white;
-  border-bottom: 2px solid white; 
+  border-bottom: 2px solid white;
   text-align: center;
-  }
-
-
-  .anchor {
-    display: block;
-    position: relative;
-    top: -45px;
-    visibility: hidden;
 }
-
+.anchor {
+  display: block;
+  position: relative;
+  top: -45px;
+  visibility: hidden;
+}
 li {
   margin: 10px;
 }
-
 .section {
-  /* height: 100vh; */
+ /* height: 100vh;
+  */
   display: inline;
 }
-
 .rating {
   color: white;
+  font-size: 20px;
 }
-
 #footer {
   display: block;
   margin-top: 10px;
 }
-
 .parallax {
-  /* The image used */
   background-image: url("../../media/parallax_img.jpg");
-  /* Set a specific height */
-  min-height: 300px; 
-  /* Create the parallax scrolling effect */
+  min-height: 300px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .syn {
   width: auto;
   border: 2px solid pink;
@@ -248,7 +218,6 @@ li {
   height: auto;
   background-color: rgb(53, 10, 53);
 }
-
 .syn iframe {
   margin-left: 0px;
   float: right;
@@ -256,36 +225,26 @@ li {
   width: 650px;
   margin: 0 auto;
   border: none;
-
-  padding-top: 0px; 
+  padding-top: 0px;
   padding-right: 4px;
   padding-left: 4px;
-
 }
-
-
 .syn p {
-  color: pink;
+  color: white;
   padding-right: 50px;
   padding-left: 10px;
   font-size: 20px;
   text-align: left;
   width: 500px;
 }
-
-
-
 .syn h3 {
- padding-left: 10px;
- padding-top: 10px;
- text-align: left;
- font-size: 30px;
-
+  padding-left: 10px;
+  padding-top: 10px;
+  text-align: left;
+  font-size: 30px;
 }
-
-
 .span {
-  font-weight: bold; 
+  font-weight: bold;
   padding-bottom: 100px;
   padding-left: 100px;
   color: white;
@@ -293,10 +252,9 @@ li {
 #booking {
   color: white;
   margin-left: 6px;
-
 }
 .button {
-  background-color: rgb(223, 145, 226); /* Green */
+  background-color: rgb(223, 145, 226);
   border: none;
   color: black;
   padding: 10px 26px;
